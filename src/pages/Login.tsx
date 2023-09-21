@@ -3,12 +3,16 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { useNavigate, Link } from "react-router-dom";
 import formStyle from "./form.module.css";
+import { IPopupContext, usePopup } from "../components/mini/popupContext";
 function Login() {
+  const { triggerPopup } = usePopup() as IPopupContext
   const navigate = useNavigate();
   const [error, setError] = useState<{ mail: string[]; password: string[] }>({
     mail: [],
     password: [],
   });
+  console.log(error);
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const onLogin = (e: React.MouseEvent) => {
@@ -19,6 +23,7 @@ function Login() {
         // Signed in
         const user = userCredential.user;
         console.log(user);
+        triggerPopup("Logged in successfully!", "success")
         navigate("/");
       })
       .catch((error) => {
@@ -41,7 +46,7 @@ function Login() {
           setError((prev) => {
             return { ...prev, mail: prev.mail.concat(["Email or password incorrect"]) };
           });
-        } else console.log("Authentication Error, Please try again later!");
+        } else triggerPopup("Authentication Error, Please try again later!", "error");
       });
   };
   return (

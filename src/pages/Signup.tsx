@@ -3,13 +3,17 @@ import { User, createUserWithEmailAndPassword, updateProfile } from "firebase/au
 import { auth } from "../firebase";
 import { useNavigate, Link } from "react-router-dom";
 import formStyles from "./form.module.css";
+import { IPopupContext, usePopup } from "../components/mini/popupContext";
 function Signup() {
+  const { triggerPopup } = usePopup() as IPopupContext
   const navigate = useNavigate();
   const [error, setError] = useState<{ name: string[], mail: string[]; password: string[] }>({
     name: [],
     mail: [],
     password: [],
   });
+  console.log(error);
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,30 +30,37 @@ function Signup() {
         // ...
       })
       await updateProfile(auth.currentUser as User, {displayName: name || "user"})
-      .then(()=> navigate("/"))
-    } catch (error: any) {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+      .then(()=> {
+        triggerPopup("Account created successfully", "success")
+        navigate("/")
+      })
+    } catch (err: any) {
+        const errorCode = err.code;
+        const errorMessage = err.message;
         console.log(errorCode, errorMessage);
-        if (error.code === "auth/invalid-email") {
+        console.log(err.code);
+        
+        if (err.code === "auth/invalid-email") {
           setError((prev) => {
             return { ...prev, mail: prev.mail.concat(["Please input a valid email address"]) };
           });
           console.log("Please input a valid email address");
-        } else if (error.code === "auth/missing-password") {
+        } else if (err.code === "auth/missing-password") {
           setError((prev) => {
             return { ...prev, password: prev.password.concat(["Password is required!"]) };
           });
-        } else if (error.code === "auth/weak-password") {
+        } else if (err.code === "auth/weak-password") {
           setError((prev) => {
             return { ...prev, password: prev.password.concat(["Password should be at least 6 characters"]) };
           });
         } else if (
-          error.code === "auth/email-already-in-use ") {
+          err.code === "auth/email-already-in-use") {
+            console.log("here");
+            
           setError((prev) => {
             return { ...prev, mail: prev.mail.concat(["Email already in use by a different account"]) };
           });
-        } else console.log("Authentication Error, Please try again later!");
+        } else triggerPopup("Authentication Error, Please try again later!", "error");
     }
   };
   return (
@@ -65,7 +76,6 @@ function Signup() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  required
                   placeholder="Display name"
                 />
                 {
