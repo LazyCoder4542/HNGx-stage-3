@@ -1,10 +1,9 @@
-import React from "react";
 import { User, signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
-import Search from "./mini/Search";
-import { ReactComponent as HomeIcon } from "../assets/icons/Home.svg";
+// import Search from "./mini/Search";
+// import { ReactComponent as HomeIcon } from "../assets/icons/Home.svg";
 import { ReactComponent as AvatarIcon } from "../assets/icons/avatar.svg";
 import { ReactComponent as LogoutIcon } from "../assets/icons/Logout.svg";
 import logo from "./../assets/images/logo.png"

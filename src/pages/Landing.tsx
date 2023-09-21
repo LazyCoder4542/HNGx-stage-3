@@ -8,7 +8,7 @@ import image3 from "./../assets/images/hmmm.jpeg"
 import image4 from "./../assets/images/stallion.jpeg"
 import image5 from "./../assets/images/lobster.jpeg"
 import image6 from "./../assets/images/big_cat.jpeg"
-import image7 from "./../assets/images/caart.jpeg"
+// import image7 from "./../assets/images/caart.jpeg"
 function Landing() {
   return (
     <div className={styles.container}>

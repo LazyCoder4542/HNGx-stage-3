@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { User, onAuthStateChanged, updateProfile } from 'firebase/auth';
+import { User, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase';
 interface IProp {
   redirectPath?: string,
