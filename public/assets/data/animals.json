@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Common Brown Baboon",
+    "tags": ["baboon", "arboreal", "hairy", "mammal", "wild", "herbivore", "monkey"],
+    "img": [
+      {"src": "common_brown_baboon.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Fennec Fox",
+    "tags": ["fox", "terrestrial", "hairy", "mammal", "wild", "carnivore"],
+    "img": [
+      {"src": "Fennec Fox _ National Geographic.jpeg", "orientation": "portrait"},
+      {"src": "image 4fennec_fox.png", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Golden Snub Monkey",
+    "tags": ["monkey", "arboreal", "hairy", "mammal", "wild", "herbivore"],
+    "img": [
+      {"src": "golden_snub_monkey.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Golden Tortoise Beetle",
+    "tags": ["beetle", "terrestrial", "oviparous", "herbivore", "insect"],
+    "img": [
+      {"src": "Golden tortoise beetle.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Green Vine Snake",
+    "tags": ["snake", "terrestrial", "scaly", "oviparous", "wild", "carnivore", "reptile"],
+    "img": [
+      {"src": "Green vine snake curled up - by Raghuram Hg - JungleDragon.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Humpback Whale",
+    "tags": ["whale", "aquatic", "scaly", "mammal", "wild", "carnivore", "fish"],
+    "img": [
+      {"src": "image 4humpback_whale.png", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Japanese Macaque",
+    "tags": ["monkey", "terrestrial", "hairy", "mammal", "wild", "carnivore"],
+    "img": [
+      {"src": "Japanese macaque.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Leafy Seadragon",
+    "tags": ["seadragon", "aquatic", "leafy", "oviparous", "wild", "herbivore", "fish"],
+    "img": [
+      {"src": "Leafy SeaDragon_...all my favourite colours beautiful.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Mandarin Duck",
+    "tags": ["duck", "aquatic", "feather", "oviparous", "domestic", "herbivore", "bird"],
+    "img": [
+      {"src": "Mandarin duck.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Narwhal",
+    "tags": ["narwhale", "aquatic", "scaly", "mammal", "wild", "carnivore", "fish"],
+    "img": [
+      {"src": "Narwhal camp_ Conservation in the High Arctic - Oceanographic.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Pink Grasshopper",
+    "tags": ["grasshopper", "terrestrial", "leafy", "oviparous", "omnivore", "insect", "pink"],
+    "img": [
+      {"src": "pink_grasshopper.png", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Saiga Antelope",
+    "tags": ["antelope", "terrestrial", "fur", "mammal", "wild", "herbivore", "horn"],
+    "img": [
+      {"src": "Saiga antelope.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Slow Loris",
+    "tags": ["loris", "terrestrial", "fur", "mammal", "wild", "herbivore"],
+    "img": [
+      {"src": "slow Loris.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Spotted Deer",
+    "tags": ["deer", "terrestrial", "scaly", "oviparous", "wild", "carnivore", "reptile", "horn"],
+    "img": [
+      {"src": "spotted_deer.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Liger",
+    "tags": ["tiger", "lion", "exotic", "hybrid", "terrestrial", "fur", "mammal", "wild", "carnivore", "cat"],
+    "img": [
+      {"src": "The Liger - The Largest of the _Big Cats_.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Thorny Devil",
+    "tags": ["thorn", "horn", "terrestrial", "scaly", "oviparous", "wild", "insectivore", "reptile"],
+    "img": [
+      {"src": "thorny_devil.jpeg", "orientation": "portrait"}
+    ]
+  },
+  {
+    "name": "Tree frog",
+    "tags": ["frog", "arboreal", "slimy", "oviparous", "wild", "insectivore", "amphibian"],
+    "img": [
+      {"src": "tree_frog.jpeg", "orientation": "portrait"}
+    ]
+  }
+]
