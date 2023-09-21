@@ -25,7 +25,6 @@ h1 {
   --text-7xl: 4.5rem/4.5rem;
   --text-8xl: 6rem/6rem;
   --text-9xl: 8rem/8rem;
-
   --clr-neutral: #ffffff;
   --clr-light: #efeee0;
   --clr-dark: #1d2123;
@@ -39,7 +38,6 @@ h1 {
     "Helvetica Neue", sans-serif;
   --header-width: 4rem;
   --page-padding: 1.5rem;
-
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -97,22 +95,23 @@ input {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  &.btn-primary {
-    background-color: var(--clr-secondary);
-    &:hover {
-      background-color: var(--clr-secondary-alt);
-    }
-  }
-  &.btn-secondary {
-    background-color: var(--clr-primary);
-    &:hover {
-      background-color: var(--clr-primary-alt);
-    }
-  }
-  &.rounded {
-    border-radius: 999px;
-  }
 }
+.btn.btn-primary {
+  background-color: var(--clr-secondary);
+}
+.btn.btn-primary:hover {
+  background-color: var(--clr-secondary-alt);
+}
+.btn.btn-secondary {
+  background-color: var(--clr-primary);
+}
+.btn.btn-secondary:hover {
+  background-color: var(--clr-primary-alt);
+}
+.btn.rounded {
+  border-radius: 999px;
+}
+
 button {
   font-family: inherit;
 }
@@ -125,14 +124,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (max-width: 1000px)  {
+
+@media screen and (max-width: 1000px) {
   h1 {
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 500px)  {
+@media screen and (max-width: 500px) {
   :root {
-    --header-width: 7rem
+    --header-width: 7rem ;
   }
   h1 {
     font-size: 2.5rem;
