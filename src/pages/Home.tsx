@@ -26,7 +26,7 @@ function Home() {
   const getStaticData = () => {
     const url =
       process.env.NODE_ENV === "production"
-        ? ""
+        ? "https://hngx-3-adeol.netlify.app/assets/data/animals.json"
         : "http://localhost:3000/assets/data/animals.json";
     return fetch(url);
   };
