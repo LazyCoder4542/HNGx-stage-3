@@ -9,7 +9,7 @@ import { ReactComponent as LogoutIcon } from "../assets/icons/Logout.svg";
 import logo from "./../assets/images/logo.png"
 
 import style from "./Header.module.css";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IPopupContext, usePopup } from "./mini/popupContext";
 
 function Header() {

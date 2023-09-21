@@ -6,7 +6,6 @@ import Header from "./Header";
 import "./Layout.css";
 import ProtectedRoute from "./mini/protectedRoute";
 import Landing from "../pages/Landing";
-import { User } from "firebase/auth";
 
 function Layout() {
   return (
